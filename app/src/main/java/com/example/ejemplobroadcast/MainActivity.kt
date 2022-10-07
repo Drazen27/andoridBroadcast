@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
         registerReceiver(getTimeChange, IntentFilter(Intent.ACTION_TIME_TICK))
         registerReceiver(getWifiMode, IntentFilter(WifiManager.WIFI_STATE_CHANGED_ACTION))
     }
-
     override fun onStop() {
         super.onStop()
         unregisterReceiver(getAirplaneMode)
