@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             val wifiMode=intent?.getIntExtra(WifiManager.EXTRA_WIFI_STATE,WifiManager.WIFI_STATE_UNKNOWN)
             wifiMode?.let {
                 binding.txtWifi.text= when(it){
+
                     WifiManager.WIFI_STATE_ENABLED -> "El wifi esta habilitado"
                     WifiManager.WIFI_STATE_DISABLED -> "El wifi esta deshabilitado"
                     WifiManager.WIFI_STATE_UNKNOWN -> "Servicio no reconocido"

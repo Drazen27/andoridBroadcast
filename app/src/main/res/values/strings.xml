@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">EjemploBroadcast</string>
+    <string name="btn_speak">Speak</string>
 </resources>
